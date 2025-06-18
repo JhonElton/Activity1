@@ -20,6 +20,9 @@ namespace UserProfiling
             // Call the function to collect profile information
             Profile userProfile = CollectProfile();
 
+            // Display the collected profile infoinformation
+            DisplayProfile(userProfile);
+
             Console.Write("Thank you for taking the form!");
 
             Console.WriteLine(" Press any key to exit...");
@@ -54,5 +57,19 @@ namespace UserProfiling
 
             return profile;
         }
+
+        // Display Profile Information
+        static void DisplayProfile(Profile profile)
+        {
+            Console.WriteLine("\n--- User Profile ---");
+            Console.WriteLine($"Name            : {profile.Name}");
+            Console.WriteLine($"Age             : {profile.Age}");
+            Console.WriteLine($"Gender          : {profile.Gender}");
+            Console.WriteLine($"Contact Number  : {profile.ContactNumber}");
+            Console.WriteLine($"Email           : {profile.Email}");
+            Console.WriteLine($"Location        : {profile.Location}");
+            Console.WriteLine($"Occupation      : {profile.Occupation}");
+        }
+
     }
 }
