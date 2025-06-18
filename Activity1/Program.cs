@@ -25,6 +25,8 @@ namespace UserProfiling
 
             Console.Write("Thank you for taking the form!");
 
+            Console.Write(" Have a Good Day! Bye!");
+
             Console.WriteLine(" Press any key to exit...");
             Console.ReadKey();
         }
